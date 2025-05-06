@@ -1,0 +1,60 @@
+#business-hours {
+    padding:2em 1em;
+}
+
+#business-hours header {
+    text-align: center;
+}
+
+#business-hours h2 {
+    display: inline-block;
+   font:var(--sectionHeader);
+   border-bottom: 2px solid var(--lightBrown);
+   margin-bottom: .5em;
+}
+
+#business-hours .container {
+    display: flex;
+    flex-direction: row;
+    margin:2em 1em;
+    justify-content: center;
+    align-items: center;
+    gap:3em;
+}
+
+#info {
+    background: #fff;
+    padding:1em 3em;
+    border:1px solid var(--lightBrown);
+    transform: rotate(-2deg);
+}
+
+#info li{
+    list-style:none;
+    border-bottom: dashed 2px var(--lightBrown);
+    padding:1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+#info li:last-child{
+    border:none;
+}
+
+#info .day{
+    display: inline-block;
+    margin-right: 2em;
+}
+
+.polariod {
+    background: #ffffff;
+    padding:10px;
+    border:1px solid var(--lightBrown);
+    line-height: 0;
+    transform: rotate(4deg);
+}
+
+.polariod img{
+    max-width: 450px;
+    max-height: 500px;
+}

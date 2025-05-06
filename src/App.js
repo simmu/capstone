@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/header';
 import Footer from './components/footer';
 import CustomerReview from './components/customerReview';
+import BusinessHour from './components/businessHour';
 
 function App() {
   return (
@@ -51,37 +52,7 @@ function App() {
             <a href='#booking'>Book Your Table</a>
           </div>
       </section>
-      <section id='business-hours'>
-        <div id='info'>
-          <ul>
-            <li>
-              <span className='day'>
-                Monday–Thursday
-              </span>
-              <span className='time'>
-                11:00 AM - 9:00 PM
-              </span>
-            </li>
-            <li>
-              <span className='day'>
-                Friday - Saturday
-              </span>
-              <span className='time'>
-                11:00 AM - 11:00 PM
-              </span>
-            </li>
-            <li>
-              <span className='day'>
-                Sunday
-              </span>
-              <span className='time'>
-                Closed
-              </span>
-            </li>
-          </ul>
-        </div>
-        <img alt='placeholder' src='https://kzmis5f5g3tczbfwwdo9.lite.vusercontent.net/placeholder.svg?height=600&width=800'></img>
-      </section>
+      <BusinessHour></BusinessHour>
       <CustomerReview></CustomerReview>
       <Footer></Footer>
     </div>
