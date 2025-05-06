@@ -1,19 +1,11 @@
 import './App.css';
+import Header from './components/header';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Little Lemon</h1>
-        <nav>
-          <ul>
-            <li>Home</li>
-            <li>Menu</li>
-            <li>Reserve</li>
-            <li>About</li>
-          </ul>
-        </nav>
-      </header>
+      <div className='container'>
+      <Header></Header>
       <section className='hero'>
           <ul>
             <li>
@@ -125,6 +117,7 @@ function App() {
           </li>
         </ul>
       </footer>
+    </div>
     </div>
   );
 }
