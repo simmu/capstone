@@ -1,0 +1,49 @@
+
+#customer-reviews {
+    padding:2em 1em;
+}
+
+#customer-reviews header {
+    text-align: center;
+}
+
+#customer-reviews h2 {
+    display: inline-block;
+   font:var(--sectionHeader);
+   border-bottom: 2px solid var(--lightBrown);
+   margin-bottom: .5em;
+}
+
+.review-list {
+    display: flex;
+    gap:2em;
+    margin:2em 0;
+}
+
+
+.review-list li{
+    background:#fff;
+    list-style: none;
+    padding:1em;
+    border: 1px solid var(--darkBrown);
+    text-align: center;
+}
+
+.star {
+    color:transparent;
+    font-size: 2em;
+}
+
+.filled {
+    color:var(--lightBrown);
+}
+
+.author-name {
+    margin-top:1em;
+    font-family: var(--cursive);
+    font-size:1.2em;
+}
+
+.review-date{
+    font-size:0.7em;
+}

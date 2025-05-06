@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './components/header';
 import Footer from './components/footer';
+import CustomerReview from './components/customerReview';
 
 function App() {
   return (
@@ -81,23 +82,7 @@ function App() {
         </div>
         <img alt='placeholder' src='https://kzmis5f5g3tczbfwwdo9.lite.vusercontent.net/placeholder.svg?height=600&width=800'></img>
       </section>
-      <section id='customer-reviews'>
-        <h2>What Our Guests Say</h2>
-        <ul>
-          <li>
-            <div className='rating'>
-              <span>★</span>
-              <span>★</span>
-              <span>★</span>
-              <span>★</span>
-              <span>★</span>
-            </div>
-            <p className='review-text'>The homemade pasta transported me back to my grandmother's kitchen in Sicily. Absolutely authentic and delicious!</p>
-            <div className='author-name'>Maria G.</div>
-            <div className='review-date'>Octover 2024</div>
-          </li>
-        </ul>
-      </section>
+      <CustomerReview></CustomerReview>
       <Footer></Footer>
     </div>
     </div>
