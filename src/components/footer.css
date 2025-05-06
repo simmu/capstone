@@ -1,0 +1,23 @@
+#main-footer {
+    background-color: #f5ead6;
+    padding: 2rem 1rem;
+    border-top: 2px dashed #d9b382;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#social-links {
+    display: flex;
+    gap: 1.5em;
+}
+
+#social-links li {
+    list-style: none;
+}
+
+#social-links a {
+    text-decoration: none;
+    color:#5c4a31;
+    font-size:1.5em;
+}

@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './components/header';
+import Footer from './components/footer';
 
 function App() {
   return (
@@ -97,26 +98,7 @@ function App() {
           </li>
         </ul>
       </section>
-      <footer>
-        <p>Made with love &copy; 2025 Little Lemon</p>
-        <ul id='social-links'>
-          <li>
-            <a href="http://socialnetwork.example" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Facebook">
-              <i className="social-icon">F</i>
-            </a>
-          </li>
-          <li>
-            <a href="http://socialnetwork.example" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Facebook">
-              <i className="social-icon">F</i>
-            </a>
-          </li>
-          <li>
-            <a href="http://socialnetwork.example" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Facebook">
-              <i className="social-icon">F</i>
-            </a>
-          </li>
-        </ul>
-      </footer>
+      <Footer></Footer>
     </div>
     </div>
   );
