@@ -4,6 +4,7 @@ import Footer from './components/footer';
 import CustomerReview from './components/customerReview';
 import BusinessHour from './components/businessHour';
 import Booking from './components/booking';
+import NewMenu from './components/newMenu';
 
 function App() {
   return (
@@ -33,18 +34,9 @@ function App() {
 
           </ul>
       </section>
-      <section id='new-menu'>
-        <div className='highlite'>
-          <h2>Antipasti</h2>
-          <p>Discover our latest creations inspired by traditional Italian flavors. From hand-tossed pizzas to homemade pastas, every dish is crafted with love and care.</p>
-          <a href='#menu'>See our menu</a>
-        </div>
-        <div className='highlite'>
-          <h2>Antipasti</h2>
-          <p>Discover our latest creations inspired by traditional Italian flavors. From hand-tossed pizzas to homemade pastas, every dish is crafted with love and care.</p>
-          <a href='#menu'>See our menu</a>
-        </div>
-      </section>
+      <div className='section-container'>
+        <NewMenu></NewMenu>
+      </div>
       <Booking></Booking>
       <BusinessHour></BusinessHour>
       <CustomerReview></CustomerReview>

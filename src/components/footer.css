@@ -1,5 +1,5 @@
 #main-footer {
-    background-color: #f5ead6;
+    background-color: var(--grayBrown);
     padding: 2rem 1rem;
     border-top: 2px dashed #d9b382;
     display: flex;

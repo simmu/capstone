@@ -1,53 +1,58 @@
 :root {
-    --cursive: "Caveat", cursive;
-    --sectionHeader: 500 3em "Caveat", cursive;
-    --darkBrown: #5c4a31;
-    --lightBrown: #d9b382;
+  --cursive: "Caveat", cursive;
+  --sectionHeader: 500 3em "Caveat", cursive;
+  --darkBrown: #5c4a31;
+  --grayBrown: #f5ead6;
+  --lightBrown: #d9b382;
 }
 
 .btn {
-    display: inline-block;
-    border:2px solid var(--darkBrown);
-    border-radius: 4px;
-    color:var(--darkBrown);
-    background:var(--lightBrown);
-    text-decoration: none;
-    padding:8px 16px;
-    font-weight: 600;
-    font-size:.9rem;
-    transition: all .35s;
-    cursor: pointer;
+  display: inline-block;
+  border: 2px solid var(--darkBrown);
+  border-radius: 4px;
+  color: var(--darkBrown);
+  background: var(--lightBrown);
+  text-decoration: none;
+  padding: 8px 16px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.35s;
+  cursor: pointer;
 }
 
-.btn:hover{
-    color:#ffffff;
-    background:var(--darkBrown);
+.btn:hover {
+  color: #ffffff;
+  background: var(--darkBrown);
 }
 
 .section {
-    padding: 2em 1em;
+  padding: 2em 1em;
 }
 
 .section header {
-    text-align: center;
+  text-align: center;
 }
 
 .section h2 {
-    display: inline-block;
-    font: var(--sectionHeader);
-    border-bottom: 3px solid var(--lightBrown);
-    margin-bottom: .5em;
+  display: inline-block;
+  font: var(--sectionHeader);
+  border-bottom: 3px solid var(--lightBrown);
+  margin-bottom: 0.5em;
+}
+
+.section-container {
+    background: var(--grayBrown);
 }
 
 .polariod {
-    background: #ffffff;
-    padding:10px;
-    border:1px solid var(--lightBrown);
-    line-height: 0;
-    transform: rotate(4deg);
-    max-width: 500px;
+  background: #ffffff;
+  padding: 10px;
+  border: 1px solid var(--lightBrown);
+  line-height: 0;
+  transform: rotate(4deg);
+  max-width: 500px;
 }
 
-.polariod img{
-    max-width: 100%;
+.polariod img {
+  max-width: 100%;
 }
