@@ -23,7 +23,7 @@ function CustomerReview() {
     ]
 
     return (
-        <section id='customer-reviews'>
+        <section id='customer-reviews' className="section">
             <header>
                 <h2>What Our Guests Say</h2>
             </header>

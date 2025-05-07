@@ -1,19 +1,4 @@
 
-#customer-reviews {
-    padding:2em 1em;
-}
-
-#customer-reviews header {
-    text-align: center;
-}
-
-#customer-reviews h2 {
-    display: inline-block;
-   font:var(--sectionHeader);
-   border-bottom: 2px solid var(--lightBrown);
-   margin-bottom: .5em;
-}
-
 .review-list {
     display: flex;
     gap:2em;

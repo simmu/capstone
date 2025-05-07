@@ -1,17 +1,3 @@
-#business-hours {
-    padding:2em 1em;
-}
-
-#business-hours header {
-    text-align: center;
-}
-
-#business-hours h2 {
-    display: inline-block;
-   font:var(--sectionHeader);
-   border-bottom: 2px solid var(--lightBrown);
-   margin-bottom: .5em;
-}
 
 #business-hours .container {
     display: flex;
@@ -46,15 +32,3 @@
     margin-right: 2em;
 }
 
-.polariod {
-    background: #ffffff;
-    padding:10px;
-    border:1px solid var(--lightBrown);
-    line-height: 0;
-    transform: rotate(4deg);
-}
-
-.polariod img{
-    max-width: 450px;
-    max-height: 500px;
-}

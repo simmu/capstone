@@ -3,6 +3,7 @@ import Header from './components/header';
 import Footer from './components/footer';
 import CustomerReview from './components/customerReview';
 import BusinessHour from './components/businessHour';
+import Booking from './components/booking';
 
 function App() {
   return (
@@ -44,14 +45,7 @@ function App() {
           <a href='#menu'>See our menu</a>
         </div>
       </section>
-      <section id='booking'>
-          <h2>Book a Table</h2>
-          <img alt='placeholder' src='https://kzmis5f5g3tczbfwwdo9.lite.vusercontent.net/placeholder.svg?height=600&width=800'></img>
-          <div>
-            <p>Reserve your spot today and enjoy a memorable dining experience. Our friendly staff is ready to welcome you to an authentic Italian atmosphere with the warmth of home.</p>
-            <a href='#booking'>Book Your Table</a>
-          </div>
-      </section>
+      <Booking></Booking>
       <BusinessHour></BusinessHour>
       <CustomerReview></CustomerReview>
       <Footer></Footer>

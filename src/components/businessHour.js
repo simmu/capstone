@@ -23,7 +23,7 @@ function BusinessHour() {
         }
     ]
     return (
-        <section id='business-hours'>
+        <section id='business-hours' className="section">
             <header>
                 <h2>Opening Hours</h2>
             </header>
