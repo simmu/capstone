@@ -1,5 +1,5 @@
 import "./businessHour.css";
-import cashierSrc from "../assets/images/cashier.png";
+import streetImgSrc from "../assets/images/street.webp";
 function BusinessHour() {
     const openingHours = [
         {
@@ -45,7 +45,7 @@ function BusinessHour() {
                     </ul>
                 </div>
                 <div className="polariod">
-                    <img alt='placeholder' src={cashierSrc}></img>
+                    <img alt='placeholder' src={streetImgSrc}></img>
                 </div>
 
             </div>
