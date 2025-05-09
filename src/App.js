@@ -8,18 +8,18 @@ import ReservePage from './pages/reservePage';
 
 function App() {
   return (
-    <div className="App">
-      <div className='container'>
-        <Router>
+    <Router>
+      <div className="App">
+        <div className='container'>
           <Header></Header>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/reserve" element={<ReservePage />} />
           </Routes>
           <Footer></Footer>
-        </Router>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 

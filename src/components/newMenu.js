@@ -16,7 +16,6 @@ function NewMenu() {
                     </div>
                     <h3>Antipasti</h3>
                     <p>Discover our latest creations inspired by traditional Italian flavors. From hand-tossed pizzas to homemade pastas, every dish is crafted with love and care.</p>
-                    <a href='#menu'>See our menu</a>
                 </div>
                 <div className='highlite'>
                 <div className="polariod" style={{ transform: "rotate(-1deg)" }}>
@@ -24,7 +23,6 @@ function NewMenu() {
                     </div>
                     <h3>Primi & Secondi</h3>
                     <p>Our main courses feature the finest ingredients, prepared with authentic techniques passed down through generations of Italian culinary tradition.</p>
-                    <a href='#menu'>See our menu</a>
                 </div>
             </div>
         </section>
