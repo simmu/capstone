@@ -3,7 +3,7 @@ import "./reservePage.css";
 import antiPastiImgSrc from "../assets/images/bruscetta.webp";
 
 
-function ReservePage() {
+function ReservePage({ availableTimes, dispatch }) {
     const [formData, setFormData] = useState({
         name: "",
         phone: "",
@@ -21,6 +21,9 @@ function ReservePage() {
     // Handle input changes
     const handleChange = (e) => {
         const { name, value } = e.target
+        if(name === 'date') {
+            dispatch({ type: 'updateTimes', data: { date: value } });
+        }
         setFormData({
             ...formData,
             [name]: value,
@@ -149,7 +152,7 @@ function ReservePage() {
                 allergies: "",
                 requests: "",
             })
-            setFormSubmitted(false)
+            setFormSubmitted(false);
         } else {
             // Form has errors
             console.log("Form has errors")
@@ -191,6 +194,9 @@ function ReservePage() {
                                     onChange={handleChange}
                                     onBlur={handleBlur}
                                     className={errors.name ? "input-error" : ""}
+                                    aria-required="true"
+                                    aria-invalid={errors.name ? "true" : "false"}
+                                    aria-describedby={errors.name ? "name-error" : undefined}
                                 />
                                 {errors.name && <span className="error-message">{errors.name}</span>}
                             </div>
@@ -204,8 +210,11 @@ function ReservePage() {
                                     onChange={handleChange}
                                     onBlur={handleBlur}
                                     className={errors.phone ? "input-error" : ""}
+                                    aria-required="true"
+                                    aria-invalid={errors.phone ? "true" : "false"}
+                                    aria-describedby={errors.phone ? "phone-error" : undefined}
                                 />
-                                {errors.phone && <span className="error-message">{errors.phone}</span>}
+                                {errors.phone && <span id="phone-error" className="error-message">{errors.phone}</span>}
                             </div>
                         </div>
 
@@ -220,35 +229,62 @@ function ReservePage() {
                                     onChange={handleChange}
                                     onBlur={handleBlur}
                                     className={errors.date ? "input-error" : ""}
+                                    aria-required="true"
+                                    aria-invalid={errors.date ? "true" : "false"}
+                                    aria-describedby={errors.date ? "date-error" : undefined}
                                 />
-                                {errors.date && <span className="error-message">{errors.date}</span>}
+                                {errors.date && <span id="date-error" className="error-message">{errors.date}</span>}
                             </div>
                             <div className="form-group">
                                 <label htmlFor="time">Time</label>
-                                <select id="time" name="time" onChange={handleChange} onBlur={handleBlur} className={errors.time ? "input-error" : ""}>
-                                    <option>17:00</option>
-                                    <option>18:00</option>
-                                    <option>19:00</option>
-                                    <option>20:00</option>
-                                    <option>21:00</option>
-                                    <option>22:00</option>
+                                <select
+                                    id="time"
+                                    name="time"
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                    className={errors.time ? "input-error" : ""}
+                                    aria-required="true"
+                                    aria-invalid={errors.time ? "true" : "false"}
+                                    aria-describedby={errors.time ? "time-error" : undefined}
+                                >
+                                    <option value="">Select a time</option>
+                                    {availableTimes.map((time) => (
+                                        <option key={time} value={time}>{time}</option>
+                                    ))}
                                 </select>
-                                {errors.time && <span className="error-message">{errors.time}</span>}
+                                {errors.time && <span id="time-error" className="error-message">{errors.time}</span>}
                             </div>
                         </div>
 
                         <div className="form-row">
                             <div className="form-group">
                                 <label htmlFor="guests">Number of Guests</label>
-                                <input type="number" placeholder="1" min="1" max="10" id="guests"
+                                <input
+                                    type="number"
+                                    placeholder="1"
+                                    min="1"
+                                    max="10"
+                                    id="guests"
                                     name="guests"
-                                    value={formData.guests} onChange={handleChange}
-                                    onBlur={handleBlur} className={errors.guests ? "input-error" : ""}></input>
-                                {errors.guests && <span className="error-message">{errors.guests}</span>}
+                                    value={formData.guests}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                    className={errors.guests ? "input-error" : ""}
+                                    aria-required="true"
+                                    aria-invalid={errors.guests ? "true" : "false"}
+                                    aria-describedby={errors.guests ? "guests-error" : undefined}
+                                />
+                                {errors.guests && <span id="guests-error" className="error-message">{errors.guests}</span>}
                             </div>
                             <div className="form-group">
                                 <label htmlFor="occasion">Occasion (Optional)</label>
-                                <select id="occasion" name="occasion" value={formData.occasion} onChange={handleChange}>
+                                <select
+                                    id="occasion"
+                                    name="occasion"
+                                    value={formData.occasion}
+                                    onChange={handleChange}
+                                    aria-required="false"
+                                >
                                     <option value="">Select</option>
                                     <option value="birthday">Birthday</option>
                                     <option value="anniversary">Anniversary</option>
@@ -267,6 +303,7 @@ function ReservePage() {
                                 rows="2"
                                 value={formData.allergies}
                                 onChange={handleChange}
+                                aria-required="false"
                             ></textarea>
                         </div>
 
@@ -278,12 +315,16 @@ function ReservePage() {
                                 rows="2"
                                 value={formData.requests}
                                 onChange={handleChange}
+                                aria-required="false"
                             ></textarea>
                         </div>
 
-                        <button type="submit" className="btn">
-                            Book Your Table
-                        </button>
+                        <button
+                            type="submit"
+                            className="btn"
+                            aria-label="Submit reservation form"
+                            aria-pressed="false"
+                        >Book Your Table</button>
                     </form>
                 </div>
             </section>
