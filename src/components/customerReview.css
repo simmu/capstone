@@ -32,3 +32,9 @@
 .review-date{
     font-size:0.7em;
 }
+
+@media (max-width: 768px) {
+    .review-list {
+        flex-wrap: wrap;
+    }
+  }

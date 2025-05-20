@@ -98,15 +98,22 @@
 }
 
 @media (max-width: 768px) {
+
+    #reserve .container {
+        flex-direction: column;
+        gap: 2em;
+        padding:0 .7em;
+    }
+
     #reserve .form-row {
         flex-direction: column;
     }
-    
+
     #reserve .highlite {
         flex-direction: column;
         text-align: center;
+        max-width: 100%;
     }
-    
     #reserve .polariod {
         max-width: 100%;
     }

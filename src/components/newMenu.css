@@ -32,3 +32,11 @@
     color:var(--darkBrown);
 }
 
+@media (max-width: 768px) {
+    #new-menu .container {
+        flex-direction: column;
+        max-width: 100%;
+        padding:1em 2em;
+        gap: 4em;
+    }
+}

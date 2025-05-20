@@ -56,3 +56,12 @@
 .polariod img {
   max-width: 100%;
 }
+
+@media (max-width: 768px) {
+  body{
+    min-width: 360px;
+  }
+  .section h2 {
+    font-size: 2.5em;
+  }
+}

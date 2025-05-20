@@ -32,3 +32,17 @@
     margin-right: 2em;
 }
 
+@media (max-width: 768px) {
+    #business-hours .container {
+        flex-direction: column-reverse;
+        margin:0;
+    }
+    #info {
+        transform: none;
+        font-size: .9em;
+        padding:1em 0.5em;
+    }
+    #business-hours .polariod{
+        transform: none;
+    }
+  }

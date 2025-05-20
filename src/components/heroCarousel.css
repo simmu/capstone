@@ -1,11 +1,9 @@
 .hero-carousel {
     display: flex;
     height: 55vh;
-    background-color: red;
 }
 
 .hero-carousel article {
-    background-color: blue;
     width:100%;
     background-size: cover;
     background-position: 50% 80%;
@@ -35,4 +33,22 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+
+@media (max-width: 768px) {
+
+    .hero-carousel {
+        display: flex;
+        height: 35vh;
+    }
+
+    .hero-carousel .content {
+        font-size:1.2rem;
+        width:90%;
+    }
+    
+    .hero-carousel .content h2{
+        font-size: 1em;
+    }
 }
