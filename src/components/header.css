@@ -4,11 +4,13 @@
     justify-content: space-between;
     align-items: center;
 }
-  #main-header h1 {
+
+  #main-header h1 a{
     font-size: 1.875rem;
     font-family: "Caveat", cursive;
     color: #5c4a31;
     letter-spacing: 0.05em;
+    text-decoration: none;
   }
 
   #main-nav ul{
